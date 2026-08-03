@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Инструкция по работе с инструментом изменения цен. Установка фиксированной цены, изменение на процент, умножение и деление цен товаров.">
+        <meta name="description" content="Как массово изменить цены товаров в OpenCart: наценка и скидка в процентах, фиксированная цена, округление до кратного и красивые цены.">
       
       
         <meta name="author" content="Nikita Kiselev">
@@ -67,7 +67,7 @@
       
         <meta property="og:title" content="Массовое изменение цен товаров в Bulk Products - Bulk Products">
       
-        <meta property="og:description" content="Инструкция по работе с инструментом изменения цен. Установка фиксированной цены, изменение на процент, умножение и деление цен товаров.">
+        <meta property="og:description" content="Как массово изменить цены товаров в OpenCart: наценка и скидка в процентах, фиксированная цена, округление до кратного и красивые цены.">
       
         <meta property="og:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/product_price.png">
       
@@ -83,7 +83,7 @@
       
         <meta name="twitter:title" content="Массовое изменение цен товаров в Bulk Products - Bulk Products">
       
-        <meta name="twitter:description" content="Инструкция по работе с инструментом изменения цен. Установка фиксированной цены, изменение на процент, умножение и деление цен товаров.">
+        <meta name="twitter:description" content="Как массово изменить цены товаров в OpenCart: наценка и скидка в процентах, фиксированная цена, округление до кратного и красивые цены.">
       
         <meta name="twitter:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/product_price.png">
       
@@ -111,7 +111,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#что-можно-сделать" class="md-skip">
+        <a href="#действия" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -596,18 +596,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#что-можно-сделать" class="md-nav__link">
+  <a href="#действия" class="md-nav__link">
     <span class="md-ellipsis">
-      Что можно сделать
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#тип-значения" class="md-nav__link">
-    <span class="md-ellipsis">
-      Тип значения
+      Действия
     </span>
   </a>
   
@@ -623,9 +614,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#примеры-операций" class="md-nav__link">
+  <a href="#частые-задачи" class="md-nav__link">
     <span class="md-ellipsis">
-      Примеры операций
+      Частые задачи
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#о-чём-стоит-знать" class="md-nav__link">
+    <span class="md-ellipsis">
+      О чём стоит знать
     </span>
   </a>
   
@@ -1297,18 +1297,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#что-можно-сделать" class="md-nav__link">
+  <a href="#действия" class="md-nav__link">
     <span class="md-ellipsis">
-      Что можно сделать
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#тип-значения" class="md-nav__link">
-    <span class="md-ellipsis">
-      Тип значения
+      Действия
     </span>
   </a>
   
@@ -1324,9 +1315,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#примеры-операций" class="md-nav__link">
+  <a href="#частые-задачи" class="md-nav__link">
     <span class="md-ellipsis">
-      Примеры операций
+      Частые задачи
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#о-чём-стоит-знать" class="md-nav__link">
+    <span class="md-ellipsis">
+      О чём стоит знать
     </span>
   </a>
   
@@ -1350,58 +1350,67 @@
 
   <h1>Цена</h1>
 
-<p>Инструмент <strong>«Цена»</strong> предназначен для массового редактирования цен у выбранных товаров. Вы можете задать конкретную сумму или изменить цену на основе процентов от текущего значения.</p>
+<p>Инструмент <strong>«Цена»</strong> меняет цену сразу у всех выбранных товаров: поднимает на процент, ставит
+фиксированное значение, округляет до нужной кратности.</p>
 <figure>
-<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../product-price.png" data-desc-position="bottom"><img alt="Интерфейс редактирования цены" src="../product-price.png" width="80%"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../product-price.png" data-desc-position="bottom"><img alt="Настройка изменения цены" src="../product-price.png" width="100%"></a></p>
 <figcaption>
-<p>Интерфейс настройки массового изменения цены у товаров</p>
+<p>Правило читается как фраза: что делаем с ценой, на сколько и как округляем результат</p>
 </figcaption>
 </figure>
 <hr>
-<h2 id="что-можно-сделать">Что можно сделать<a class="headerlink" href="#что-можно-сделать" title="Permanent link">¶</a></h2>
-<p>Вы можете выбрать одну из следующих операций:</p>
-<ul>
-<li><strong>Установить равной</strong> — заменить текущую цену на указанное значение.</li>
-<li><strong>Увеличить на</strong> — прибавить к текущей цене указанное значение.</li>
-<li><strong>Уменьшить на</strong> — вычесть из текущей цены указанное значение.</li>
-<li><strong>Умножить на</strong> — умножить текущую цену на указанное число.</li>
-<li><strong>Разделить на</strong> — разделить текущую цену на указанное число.</li>
-<li><strong>Округление</strong> — привести текущую цену к нужной кратности, ничего к ней не прибавляя.</li>
-</ul>
-<hr>
-<h2 id="тип-значения">Тип значения<a class="headerlink" href="#тип-значения" title="Permanent link">¶</a></h2>
-<p>Для любого из действий вы можете указать:</p>
-<ul>
-<li><strong>Абсолютное значение</strong> — число в единицах (например, 100 = 100 рублей или долларов).</li>
-<li><strong>Проценты</strong> — процент от текущей цены.</li>
-</ul>
-<p>Например:</p>
-<ul>
-<li><strong>Увеличить на 50%</strong> — товар с ценой 100 станет 150.</li>
-<li><strong>Уменьшить на 100 (абсолютно)</strong> — товар с ценой 300 станет 200.</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Про язык</p>
-<p>Настройка языка не влияет на работу инструмента цены — он применяется к числовому значению, а не к текстовому полю.</p>
-</div>
+<h2 id="действия">Действия<a class="headerlink" href="#действия" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Что делает</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Установить равной</td>
+<td>Заменяет цену на указанную</td>
+<td>1 200 → <strong>990</strong></td>
+</tr>
+<tr>
+<td>Увеличить на</td>
+<td>Прибавляет к текущей цене</td>
+<td>1 200 + 10 % → <strong>1 320</strong></td>
+</tr>
+<tr>
+<td>Уменьшить на</td>
+<td>Вычитает из текущей цены</td>
+<td>1 200 − 300 → <strong>900</strong></td>
+</tr>
+<tr>
+<td>Умножить на</td>
+<td>Умножает текущую цену</td>
+<td>1 200 × 1,15 → <strong>1 380</strong></td>
+</tr>
+<tr>
+<td>Разделить на</td>
+<td>Делит текущую цену</td>
+<td>1 200 ÷ 2 → <strong>600</strong></td>
+</tr>
+<tr>
+<td>Округление</td>
+<td>Только округляет, ничего не прибавляя</td>
+<td>1 234,56 → <strong>1 230</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Значение задаётся <strong>в валюте</strong> или <strong>в процентах</strong> от текущей цены. Проценты недоступны для
+умножения и деления: «умножить на 20 %» дало бы не наценку, а пятую часть исходной цены.</p>
 <hr>
 <h2 id="округление-результата">Округление результата<a class="headerlink" href="#округление-результата" title="Permanent link">¶</a></h2>
-<p>Процент от цены почти всегда даёт дробные доли копейки: <code>199,99</code> плюс 7 % — это
-<code>213,9893</code>. OpenCart хранит цену с четырьмя знаками после запятой и такое
-значение принимает молча, поэтому модуль округляет результат сам.</p>
-<p>Рядом с операцией задаются два параметра.</p>
-<p><strong>Кратность</strong> — до чего округлять. Задаётся числом, поэтому подходит любой шаг:
-<code>0,01</code> (до копеек), <code>1</code> (до целого), <code>10</code>, <code>100</code>, а также нестандартные вроде
-<code>25</code> или <code>500</code>. Частые значения доступны по стрелке справа от поля.</p>
-<p><strong>Направление</strong> — что делать с остатком:</p>
-<ul>
-<li><strong>до ближайшего</strong> — обычное арифметическое округление;</li>
-<li><strong>вверх</strong> — цена никогда не опускается ниже посчитанной;</li>
-<li><strong>вниз</strong> — цена никогда не поднимается выше посчитанной.</li>
-</ul>
-<p>По умолчанию — до ближайшего с кратностью <code>0,01</code>, то есть результат просто
-приводится к копейкам.</p>
-<figure>
+<p>Проценты почти всегда дают дробный результат: <code>199,99 + 7 %</code> — это <code>213,9893</code>. Модуль приводит такое
+число к деньгам сам, а вы решаете, до чего именно округлять.</p>
+<p><strong>Кратность</strong> — до какого шага подтянуть цену. Задаётся любым числом: <code>0,01</code> (копейки), <code>1</code>, <code>10</code>,
+<code>100</code>, а при желании <code>25</code> или <code>500</code>. Частые значения открываются стрелкой справа от поля.</p>
+<p><strong>Направление</strong> — что делать с остатком: <strong>до ближайшего</strong>, <strong>вверх</strong> или <strong>вниз</strong>.</p>
+<p>Цена <code>1 234,5678</code> при разных настройках:</p>
 <table>
 <thead>
 <tr>
@@ -1438,38 +1447,54 @@
 </tr>
 </tbody>
 </table>
-<figcaption>
-<p>Цена <code>1 234,5678</code> при разных настройках округления</p>
-</figcaption>
-</figure>
+<p>По умолчанию — до ближайшей копейки: цена просто перестаёт быть дробной.</p>
 <div class="admonition tip">
-<p class="admonition-title">Проверьте настройки на примере</p>
-<p>Под строкой правила модуль показывает, во что превратится образцовая цена
-при текущих настройках. Пример считается на сервере тем же кодом, что и
-предпросмотр изменений, поэтому расхождений между ними не бывает.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Красивые цены</p>
-<p>Кратность удобна для ценовой политики: кратность <code>10</code> с направлением
-<strong>вверх</strong> даёт цены вида 1 240, 3 590, 12 300 — без «хвостов» после
-переоценки на проценты.</p>
+<p class="admonition-title">Проверьте настройки, не запуская обработку</p>
+<p>Под правилом показано, во что превратится образцовая цена при текущих настройках. Пример
+считается на сервере — тем же кодом, что и сама обработка, — поэтому ему можно верить.</p>
 </div>
 <hr>
-<h2 id="примеры-операций">Примеры операций<a class="headerlink" href="#примеры-операций" title="Permanent link">¶</a></h2>
-<ul>
-<li><strong>Установить равной 500 (абсолютно)</strong> — все товары будут стоить 500.</li>
-<li><strong>Увеличить на 25%</strong> — цена каждого товара увеличится на четверть.</li>
-<li><strong>Разделить на 2</strong> — цена каждого товара уменьшится вдвое.</li>
-<li><strong>Умножить на 1.1</strong> — наценка 10%.</li>
-<li><strong>Увеличить на 7% с округлением вверх до кратного 10</strong> — переоценка сразу
-  «красивыми» ценами.</li>
-<li><strong>Округление с кратностью 0,01</strong> — починить цены, у которых остались доли
-  меньше копейки. Найти такие товары помогает переключатель
-  <a href="../../product-search/filters/#_4">«Только цены, не кратные копейке»</a>
-  в фильтре по цене.</li>
-</ul>
+<h2 id="частые-задачи">Частые задачи<a class="headerlink" href="#частые-задачи" title="Permanent link">¶</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Поднять цены на 7 %</label><label for="__tabbed_1_2">Переоценка красивыми ценами</label><label for="__tabbed_1_3">Скидка на распродажу</label><label for="__tabbed_1_4">Починить цены с копейками сверх</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../price-recipe-markup.png" data-desc-position="bottom"><img alt="Наценка 7 % с округлением до копеек" src="../price-recipe-markup.png" width="100%"></a></p>
+<p>Цены вырастут ровно на семь процентов и останутся с копейками: 1 200 → 1 284,
+999 → 1 068,93.</p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../price-recipe-round-up.png" data-desc-position="bottom"><img alt="Наценка 7 % с округлением вверх до десятков" src="../price-recipe-round-up.png" width="100%"></a></p>
+<p>Цены поднимутся и подтянутся к десяткам: 1 200 → 1 290, 999 → 1 080. Направление «вверх»
+гарантирует, что цена не окажется ниже посчитанной наценки.</p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../price-recipe-discount.png" data-desc-position="bottom"><img alt="Скидка 15 % с округлением вниз до десятков" src="../price-recipe-discount.png" width="100%"></a></p>
+<p>Цена уменьшится минимум на заявленные проценты: 1 200 → 1 020. «Вниз» здесь важно — иначе
+округление отыграет часть скидки обратно.</p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../price-recipe-fix.png" data-desc-position="bottom"><img alt="Округление до копеек без изменения цены" src="../price-recipe-fix.png" width="100%"></a></p>
+<p>Действие не меняет саму цену, а только убирает доли меньше копейки. Такие товары находит
+переключатель «Только цены, не кратные копейке» в
+<a href="../../product-search/filters/">фильтре по цене</a>.</p>
+</div>
+</div>
+</div>
 <hr>
-<p>Этот инструмент позволяет быстро изменять цены сразу у всех выбранных товаров, не открывая их вручную. Особенно полезен при сезонных скидках, переоценке или массовом импорте новых цен.</p>
+<h2 id="о-чём-стоит-знать">О чём стоит знать<a class="headerlink" href="#о-чём-стоит-знать" title="Permanent link">¶</a></h2>
+<p><strong>Цена в базе точнее, чем на витрине.</strong> OpenCart хранит цену с четырьмя знаками после запятой,
+поэтому в базе может оказаться <code>213,9893</code> вместо <code>213,99</code>. В таблице товаров такая цена показана
+округлённой — визуально разницы нет, но это разные числа, и они могут расходиться в заказах и
+выгрузках. Чтобы увидеть точное значение, включите колонку <strong>«Сырая цена»</strong> в списке товаров.</p>
+<p><strong>Проценты считаются от текущей цены каждого товара</strong>, а не от какой-то общей суммы. Поэтому
+«увеличить на 10 %» даст разную прибавку для товара за 500 и за 50 000.</p>
+<p><strong>Акции и скидки инструмент не трогает.</strong> Меняется базовая цена товара; действующие акции
+(специальные цены) остаются прежними, и покупатель на витрине по-прежнему увидит их.</p>
+<div class="admonition warning">
+<p class="admonition-title">Массовое изменение необратимо</p>
+<p>Отмены у обработки нет. Перед запуском посмотрите шаг <strong>предпросмотра</strong> — там видно, что
+получится у каждого товара, — и убедитесь, что у магазина есть свежая резервная копия.</p>
+</div>
 
 
 
