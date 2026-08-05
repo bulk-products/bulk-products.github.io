@@ -1156,6 +1156,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#transliterate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        transliterate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#slugify" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1843,6 +1854,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#transliterate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        transliterate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#slugify" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1997,7 +2019,7 @@
 <h3 id="squish">squish<a class="headerlink" href="#squish" title="Permanent link">¶</a></h3>
 <p><strong>Описание:</strong> Удаляет лишние пробелы, включая пробелы между словами.<br>
 <strong>Пример:</strong> <code>{product_name|squish}</code><br>
-<strong>Результат:</strong> <code>"   стильные   ботинки   " -&gt; "стильныеботинки"</code></p>
+<strong>Результат:</strong> <code>"   стильные   ботинки   " -&gt; "стильные ботинки"</code></p>
 <hr>
 <h3 id="replace">replace<a class="headerlink" href="#replace" title="Permanent link">¶</a></h3>
 <p><strong>Описание:</strong> Заменяет заданное слово или символ в строке.<br>
@@ -2025,14 +2047,24 @@
 <strong>Результат:</strong> <code>"модная спортивная обувь" -&gt; "Модная Спортивная Обувь"</code></p>
 <hr>
 <h3 id="truncate">truncate<a class="headerlink" href="#truncate" title="Permanent link">¶</a></h3>
-<p><strong>Описание:</strong> Обрезает строку до заданного количества символов и добавляет многоточие.<br>
+<p><strong>Описание:</strong> Обрезает строку до заданного количества символов и добавляет в конце многоточие. Строка короче заданной длины остаётся как есть — многоточие к ней не добавляется.<br>
 <strong>Пример:</strong> <code>{product_description|truncate:20}</code><br>
-<strong>Результат:</strong> <code>"Самые удобные кроссовки для повседневной носки" -&gt; "Самые удобные кр..."</code></p>
+<strong>Результат:</strong> <code>"Самые удобные кроссовки для повседневной носки" -&gt; "Самые удобные кроссо..."</code></p>
+<p><strong>Многоточие:</strong> флажок «Многоточие» в окне модификаторов. В самом шаблоне это второй аргумент: <code>1</code> — оставить многоточие, <code>0</code> — обрезать без него.</p>
+<p><strong>Пример:</strong> <code>{product_description|truncate:20:0}</code><br>
+<strong>Результат:</strong> <code>"Самые удобные кроссовки для повседневной носки" -&gt; "Самые удобные кроссо"</code></p>
+<div class="admonition tip">
+<p class="admonition-title">Где это пригодится</p>
+<p>Многоточие занимает три символа из лимита поисковых систем. Если вы подгоняете мета-заголовок под 60 символов, отключите его — так поместится больше текста.</p>
+</div>
 <hr>
 <h3 id="truncate_words">truncate_words<a class="headerlink" href="#truncate_words" title="Permanent link">¶</a></h3>
-<p><strong>Описание:</strong> Обрезает строку до заданного количества слов.<br>
+<p><strong>Описание:</strong> Обрезает строку до заданного количества слов и добавляет в конце многоточие. Строка короче заданного числа слов остаётся как есть.<br>
 <strong>Пример:</strong> <code>{product_description|truncate_words:3}</code><br>
 <strong>Результат:</strong> <code>"Лёгкие и удобные кроссовки для бега" -&gt; "Лёгкие и удобные..."</code></p>
+<p><strong>Многоточие:</strong> так же, как у <code>truncate</code>, — флажок в окне модификаторов, второй аргумент <code>1</code> или <code>0</code> в шаблоне.</p>
+<p><strong>Пример:</strong> <code>{product_description|truncate_words:3:0}</code><br>
+<strong>Результат:</strong> <code>"Лёгкие и удобные кроссовки для бега" -&gt; "Лёгкие и удобные"</code></p>
 <hr>
 <h3 id="remove_tags">remove_tags<a class="headerlink" href="#remove_tags" title="Permanent link">¶</a></h3>
 <p><strong>Описание:</strong> Удаляет HTML-теги и мнемоники из строки. Также удаляет лишние пробелы, оставшиеся после удаления тегов и мнемоник. Что такое <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">HTML мнемоники</a>?</p>
@@ -2056,6 +2088,14 @@
 <p><strong>Описание:</strong> Переворачивает строку задом наперёд.<br>
 <strong>Пример:</strong> <code>{product_name|reverse}</code><br>
 <strong>Результат:</strong> <code>"Кроссовки" -&gt; "иквоссорК"</code></p>
+<hr>
+<h3 id="transliterate">transliterate<a class="headerlink" href="#transliterate" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Записывает кириллицу латиницей и больше ничего не меняет: пробелы, знаки препинания, цифры и регистр букв остаются на месте.<br>
+<strong>Пример:</strong> <code>{product_name|transliterate}</code><br>
+<strong>Результат:</strong> <code>"Спортивная обувь!" -&gt; "Sportivnaya obuv!"</code></p>
+<p><strong>Чем отличается от <code>slugify</code>:</strong> <code>slugify</code> тоже транслитерирует, но дополнительно приводит текст к нижнему регистру и заменяет пробелы и знаки препинания дефисами — он готовит адрес страницы. <code>transliterate</code> нужен там, где латиница требуется в обычном тексте: артикул, название на латинице, описание для иностранного магазина.</p>
+<p><strong>Пример:</strong> <code>{product_name|transliterate}</code> против <code>{product_name|slugify}</code><br>
+<strong>Результат:</strong> <code>"Спортивная обувь!" -&gt; "Sportivnaya obuv!"</code> против <code>"Спортивная обувь!" -&gt; "sportivnaya-obuv"</code></p>
 <hr>
 <h3 id="slugify">slugify<a class="headerlink" href="#slugify" title="Permanent link">¶</a></h3>
 <p><strong>Описание:</strong> Преобразует строку в формат URL-слога.<br>
