@@ -3,19 +3,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Инструкция по работе с инструментом изменения количества товаров. Установка, увеличение, уменьшение и другие операции с остатками.">
+        <meta name="description" content="Почему переменная в шаблоне подставляет старое значение, если то же свойство меняется другим правилом того же прогона, и как этого избежать.">
       
       
         <meta name="author" content="Nikita Kiselev">
       
       
-        <link rel="canonical" href="https://bulk-products.github.io/product-bulk-edit/product_quantity/">
+        <link rel="canonical" href="https://bulk-products.github.io/product-bulk-edit/stale-values/">
       
       
-        <link rel="prev" href="../product_model/">
+        <link rel="prev" href="../variables/">
       
       
-        <link rel="next" href="../product_status/">
+        <link rel="next" href="../../seo-master/">
       
       
         
@@ -26,7 +26,7 @@
     
     
       
-        <title>Массовое изменение количества товаров в Bulk Products - Bulk Products</title>
+        <title>Устаревшие значения переменных в Bulk Products - Bulk Products</title>
       
     
     
@@ -67,17 +67,17 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="Массовое изменение количества товаров в Bulk Products - Bulk Products">
-<meta property="og:description" content="Инструкция по работе с инструментом изменения количества товаров. Установка, увеличение, уменьшение и другие операции с остатками.">
-<meta property="og:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/product_quantity.png">
+<meta property="og:title" content="Устаревшие значения переменных в Bulk Products - Bulk Products">
+<meta property="og:description" content="Почему переменная в шаблоне подставляет старое значение, если то же свойство меняется другим правилом того же прогона, и как этого избежать.">
+<meta property="og:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/stale-values.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://bulk-products.github.io/product-bulk-edit/product_quantity/">
+<meta property="og:url" content="https://bulk-products.github.io/product-bulk-edit/stale-values/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Массовое изменение количества товаров в Bulk Products - Bulk Products">
-<meta property="twitter:description" content="Инструкция по работе с инструментом изменения количества товаров. Установка, увеличение, уменьшение и другие операции с остатками.">
-<meta property="twitter:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/product_quantity.png">
+<meta property="twitter:title" content="Устаревшие значения переменных в Bulk Products - Bulk Products">
+<meta property="twitter:description" content="Почему переменная в шаблоне подставляет старое значение, если то же свойство меняется другим правилом того же прогона, и как этого избежать.">
+<meta property="twitter:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/stale-values.png">
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#доступные-действия" class="md-skip">
+        <a href="#как-это-выглядит" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Массовое изменение количества товаров в Bulk Products
+              Устаревшие значения переменных в Bulk Products
             
           </span>
         </div>
@@ -915,35 +915,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Количество
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../product_quantity/" class="md-nav__link">
         
   
   
@@ -959,57 +934,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#доступные-действия" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Доступные действия
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#тип-значения" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Тип значения
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#поле-ввода" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Поле ввода
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1747,10 +1671,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../stale-values/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Устаревшие значения переменных
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1766,6 +1715,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#как-это-выглядит" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Как это выглядит
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#где-модуль-об-этом-предупреждает" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Где модуль об этом предупреждает
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#что-делать" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что делать
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#почему-так-устроено" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Почему так устроено
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2152,10 +2163,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#доступные-действия" class="md-nav__link">
+  <a href="#как-это-выглядит" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Доступные действия
+        Как это выглядит
       
     </span>
   </a>
@@ -2163,10 +2174,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#тип-значения" class="md-nav__link">
+  <a href="#где-модуль-об-этом-предупреждает" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Тип значения
+        Где модуль об этом предупреждает
       
     </span>
   </a>
@@ -2174,10 +2185,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#поле-ввода" class="md-nav__link">
+  <a href="#что-делать" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Поле ввода
+        Что делать
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#почему-так-устроено" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Почему так устроено
       
     </span>
   </a>
@@ -2201,42 +2223,100 @@
 
 
 
-  <h1>Количество</h1>
+  <h1>Устаревшие значения переменных</h1>
 
-<p>Инструмент <strong>«Количество»</strong> позволяет массово изменить доступное для заказа количество у выбранных товаров.<br>
-Он особенно полезен при обновлении остатков или быстрой корректировке складских данных.</p>
-<hr>
-<h2 id="доступные-действия">Доступные действия<a class="headerlink" href="#доступные-действия" title="Permanent link">¶</a></h2>
-<p>Вы можете выбрать одно из следующих действий:</p>
+<p>Все правила на шаге «Выбор действия» применяются к товару <strong>независимо друг от друга</strong>. Каждое из
+них берёт значения из каталога такими, какие они там лежат сейчас, и не видит, что рассчитали
+соседние правила этого же прогона.</p>
+<p>Пока свойства не пересекаются, это незаметно. Но если одно правило подставляет переменную, а другое
+меняет то самое свойство, переменная вернёт значение <strong>до</strong> изменения.</p>
+<h2 id="как-это-выглядит">Как это выглядит<a class="headerlink" href="#как-это-выглядит" title="Permanent link">¶</a></h2>
+<p>Допустим, у товара «Кроссовки» цена 1000 ₽, и вы настроили сразу два правила:</p>
+<table>
+<thead>
+<tr>
+<th>Свойство</th>
+<th>Правило</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Название товара</td>
+<td><code>{product_name} — {product_price} ₽</code></td>
+</tr>
+<tr>
+<td>Цена</td>
+<td>увеличить на 10 %</td>
+</tr>
+</tbody>
+</table>
+<p>Кажется, что в названии окажется новая цена. На самом деле результат будет такой:</p>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Цена в каталоге</td>
+<td>1100 ₽</td>
+</tr>
+<tr>
+<td>Название</td>
+<td>Кроссовки — 1000 ₽</td>
+</tr>
+</tbody>
+</table>
+<p>Цена изменилась, а в названии осталась прежняя: правило названия читало каталог, где на тот момент
+ещё была 1000 ₽.</p>
+<div class="admonition warning">
+<p class="admonition-title">Предпросмотр не обманывает</p>
+<p>В таблице предпросмотра вы увидите ровно те значения, которые запишутся в каталог. Расходится не
+результат, а ожидание: правило сработало верно, просто взяло не то число, которое вы имели в виду.</p>
+</div>
+<p>Тот же случай встречается в SEO-прогонах, и там он самый частый: «Мета-тег Title = <code>{product_name}</code>»
+вместе с изменением самого названия даст заголовки со старыми названиями.</p>
+<h2 id="где-модуль-об-этом-предупреждает">Где модуль об этом предупреждает<a class="headerlink" href="#где-модуль-об-этом-предупреждает" title="Permanent link">¶</a></h2>
+<p>Модуль сам находит такие пары и показывает их на шаге выбора свойств:</p>
 <ul>
-<li><strong>Установить равным</strong> — задать точное значение количества.</li>
-<li><strong>Увеличить на</strong> — прибавить к текущему количеству указанное значение.</li>
-<li><strong>Уменьшить на</strong> — вычесть из текущего количества.</li>
-<li><strong>Умножить на</strong> — умножить текущее значение.</li>
-<li><strong>Разделить на</strong> — разделить текущее значение.</li>
-<li><strong>Округлить до целого</strong> — применяет округление.</li>
+<li><strong>у правила-читателя</strong> появляется оранжевый значок, а вся строка подсвечивается оранжевым;</li>
+<li><strong>над списком свойств</strong> — счётчик замечаний, по нажатию раскрывается список: какое правило какую
+  переменную читает;</li>
+<li>при переходе к предпросмотру модуль ещё раз спросит подтверждение.</li>
 </ul>
-<hr>
-<h2 id="тип-значения">Тип значения<a class="headerlink" href="#тип-значения" title="Permanent link">¶</a></h2>
-<p>Инструмент поддерживает два типа изменения:</p>
-<ul>
-<li><strong>Абсолютное значение</strong> — вводится конкретное число (например, 50).</li>
-<li><strong>Проценты</strong> — рассчитывается доля от текущего значения.</li>
-</ul>
-<p><strong>Примеры:</strong></p>
-<ul>
-<li>Увеличить на <strong>10 (единиц)</strong> → <code>50 → 60</code></li>
-<li>Увеличить на <strong>20%</strong> → <code>50 → 60</code></li>
-</ul>
-<hr>
-<h2 id="поле-ввода">Поле ввода<a class="headerlink" href="#поле-ввода" title="Permanent link">¶</a></h2>
-<ul>
-<li>Поле принимает <strong>только числовые значения</strong>.</li>
-<li>Доступен выбор режима (абсолютный или процентный).</li>
-<li>Значения применяются ко всем выбранным товарам.</li>
-</ul>
-<hr>
-<p>Инструмент «Количество» позволяет эффективно управлять остатками на складе и обеспечивает точный контроль без необходимости редактировать каждый товар вручную.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../stale-values-warnings.png" data-desc-position="bottom"><img alt="Замечания на шаге выбора свойств" src="../stale-values-warnings.png"></a></p>
+<figcaption>
+<p>Правила «Название товара» и «Мета-тег Title» подставляют переменную «Цена», а правило «Цена» её
+меняет. У обоих читателей оранжевая рамка и значок с пояснением, сама переменная подсвечена прямо
+в поле, а над списком — счётчик замечаний.</p>
+</figcaption>
+</figure>
+<p>Предупреждение ничего не запрещает: иногда старое значение — именно то, что нужно.</p>
+<h2 id="что-делать">Что делать<a class="headerlink" href="#что-делать" title="Permanent link">¶</a></h2>
+<p>Разделите работу на два прогона:</p>
+<ol>
+<li>Сначала примените изменение свойства — в примере выше это цена.</li>
+<li>Затем отдельным прогоном соберите текст с переменной: она возьмёт уже обновлённое значение из
+   каталога.</li>
+</ol>
+<p>Порядок правил внутри одного прогона роли не играет: как бы вы их ни расставили, все они читают одно
+и то же исходное состояние товара.</p>
+<h2 id="почему-так-устроено">Почему так устроено<a class="headerlink" href="#почему-так-устроено" title="Permanent link">¶</a></h2>
+<p>Можно было бы разрешать за один прогон менять только одно свойство — тогда описанного выше просто не
+случалось бы. Мы сознательно этого не делаем: свойства чаще всего друг от друга не зависят, и менять
+их вместе — заметно быстрее. Ради редкого случая лишать вас этого во всех остальных неправильно.</p>
+<p>Зависимые свойства — как раз тот редкий случай. Сделать так, чтобы одно правило подхватывало
+результат другого, возможно, но это ощутимо усложняет модуль: приходится определять, какое правило
+от какого зависит, в каком порядке их считать и что делать, если правило, от которого зависят другие,
+не выполнилось. Сложность оплачивается ценой, и платили бы за неё все, а нужна она немногим — поэтому
+мы выбрали предупреждение вместо автоматики.</p>
+<p>Если такая возможность нужна именно вам — напишите нам. Мы ориентируемся на количество обращений:
+если их будет достаточно, функция появится, и это отразится на стоимости модуля.</p>
+<p>О самих переменных и их списке — на странице <a href="../variables/">Переменные</a>, о преобразовании значений —
+на странице <a href="../modificators/">Модификаторы</a>.</p>
 
 
 
