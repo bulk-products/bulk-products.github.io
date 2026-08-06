@@ -2727,17 +2727,17 @@
 <strong>Результат:</strong> <code>"Лёгкие и удобные кроссовки для бега" -&gt; "Лёгкие и удобные"</code></p>
 <hr>
 <h3 id="remove_tags">remove_tags<a class="headerlink" href="#remove_tags" title="Permanent link">¶</a></h3>
-<p><strong>Описание:</strong> Удаляет HTML-теги и мнемоники из строки. Также удаляет лишние пробелы, оставшиеся после удаления тегов и мнемоник. Что такое <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">HTML мнемоники</a>?</p>
+<p><strong>Описание:</strong> Превращает размеченный текст в обычный: убирает HTML-теги, а <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">HTML-мнемоники</a> заменяет символами, которые они обозначают. Пробелы по краям убираются.</p>
 <p><strong>Пример:</strong> <code>{product_description|remove_tags}</code><br>
-<strong>Результат:</strong> <code>"Цена &lt;b&gt;выгодная&lt;/b&gt; &amp;amp; доступная" -&gt; "Цена выгодная доступная"</code></p>
+<strong>Результат:</strong> <code>"Цена &lt;b&gt;выгодная&lt;/b&gt; &amp;amp; доступная" -&gt; "Цена выгодная &amp; доступная"</code></p>
 <p><strong>Особенности:</strong>
 - Удаляет <strong>HTML-теги</strong>, например:
   <code>"Цена &lt;b&gt;выгодная&lt;/b&gt;" -&gt; "Цена выгодная"</code>
-- Удаляет <strong>HTML-мнемоники</strong>, например:
-  <code>"Цена &amp;amp; качество" -&gt; "Цена качество"</code>
+- <strong>Мнемоники превращает в символы</strong>, а не выбрасывает:
+  <code>"Цена &amp;amp; качество" -&gt; "Цена &amp; качество"</code>, <code>"Цветы&amp;nbsp;и&amp;nbsp;подарки" -&gt; "Цветы и подарки"</code>
 - Убирает пробелы в начале и конце строки.</p>
 <p><strong>Примечание:</strong>
-Этот модификатор не выполняет декодирование мнемоник (например, <code>&amp;quot;</code> -&gt; <code>"</code>), а удаляет их полностью.</p>
+Мнемоника <code>&amp;nbsp;</code> — это неразрывный пробел, и он остаётся пробелом. Если бы мнемоники просто выбрасывались, соседние слова слипались бы в одно.</p>
 <hr>
 <h3 id="capitalize">capitalize<a class="headerlink" href="#capitalize" title="Permanent link">¶</a></h3>
 <p><strong>Описание:</strong> Делает первую букву каждого слова заглавной, а остальные в нижнем регистре.<br>
