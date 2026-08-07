@@ -3,30 +3,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Инструкция по работе с инструментом управления акциями. Замена, добавление и удаление акционных цен для групп покупателей в OpenCart.">
       
       
-        <link rel="canonical" href="https://bulk-products.github.io/seo-master/">
+        <meta name="author" content="Nikita Kiselev">
       
       
-        <link rel="prev" href="../product-bulk-edit/stale-values/">
+        <link rel="canonical" href="https://bulk-products.github.io/product-bulk-edit/product_specials/">
       
       
-        <link rel="next" href="manually/">
+        <link rel="prev" href="../product_discounts/">
+      
+      
+        <link rel="next" href="../product_sku/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Инструмент SEO Master - Bulk Products</title>
+        <title>Массовое управление акциями товаров в Bulk Products - Bulk Products</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -45,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -63,16 +67,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="Инструмент SEO Master - Bulk Products">
-<meta property="og:image" content="https://bulk-products.github.io/assets/images/social/seo-master/index.png">
+<meta property="og:title" content="Массовое управление акциями товаров в Bulk Products - Bulk Products">
+<meta property="og:description" content="Инструкция по работе с инструментом управления акциями. Замена, добавление и удаление акционных цен для групп покупателей в OpenCart.">
+<meta property="og:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/product_specials.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://bulk-products.github.io/seo-master/">
+<meta property="og:url" content="https://bulk-products.github.io/product-bulk-edit/product_specials/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Инструмент SEO Master - Bulk Products">
-<meta property="twitter:image" content="https://bulk-products.github.io/assets/images/social/seo-master/index.png">
-<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:title" content="Массовое управление акциями товаров в Bulk Products - Bulk Products">
+<meta property="twitter:description" content="Инструкция по работе с инструментом управления акциями. Замена, добавление и удаление акционных цен для групп покупателей в OpenCart.">
+<meta property="twitter:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/product_specials.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -94,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#инструмент-seo-master" class="md-skip">
+        <a href="#чем-акция-отличается-от-скидки" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -110,7 +116,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href=".." title="Bulk Products" class="md-header__button md-logo" aria-label="Bulk Products" data-md-component="logo">
+    <a href="../.." title="Bulk Products" class="md-header__button md-logo" aria-label="Bulk Products" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
@@ -130,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Инструмент SEO Master
+              Массовое управление акциями товаров в Bulk Products
             
           </span>
         </div>
@@ -208,7 +214,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Bulk Products" class="md-nav__button md-logo" aria-label="Bulk Products" data-md-component="logo">
+    <a href="../.." title="Bulk Products" class="md-nav__button md-logo" aria-label="Bulk Products" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
@@ -226,7 +232,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -253,7 +259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   
@@ -280,7 +286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../start/" class="md-nav__link">
+      <a href="../../start/" class="md-nav__link">
         
   
   
@@ -307,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../settings/" class="md-nav__link">
+      <a href="../../settings/" class="md-nav__link">
         
   
   
@@ -394,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-search/filters/" class="md-nav__link">
+      <a href="../../product-search/filters/" class="md-nav__link">
         
   
   
@@ -422,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-search/select/" class="md-nav__link">
+      <a href="../../product-search/select/" class="md-nav__link">
         
   
   
@@ -454,6 +460,8 @@
       
   
   
+    
+  
   
   
     
@@ -552,17 +560,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked="">
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../product-bulk-edit/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -586,7 +592,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -606,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_name/" class="md-nav__link">
+      <a href="../product_name/" class="md-nav__link">
         
   
   
@@ -634,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_price/" class="md-nav__link">
+      <a href="../product_price/" class="md-nav__link">
         
   
   
@@ -662,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_manufacturer/" class="md-nav__link">
+      <a href="../product_manufacturer/" class="md-nav__link">
         
   
   
@@ -690,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_categories/" class="md-nav__link">
+      <a href="../product_categories/" class="md-nav__link">
         
   
   
@@ -718,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_main_category/" class="md-nav__link">
+      <a href="../product_main_category/" class="md-nav__link">
         
   
   
@@ -746,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_description/" class="md-nav__link">
+      <a href="../product_description/" class="md-nav__link">
         
   
   
@@ -774,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_meta_h1/" class="md-nav__link">
+      <a href="../product_meta_h1/" class="md-nav__link">
         
   
   
@@ -802,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_meta_title/" class="md-nav__link">
+      <a href="../product_meta_title/" class="md-nav__link">
         
   
   
@@ -830,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_meta_description/" class="md-nav__link">
+      <a href="../product_meta_description/" class="md-nav__link">
         
   
   
@@ -858,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_meta_keywords/" class="md-nav__link">
+      <a href="../product_meta_keywords/" class="md-nav__link">
         
   
   
@@ -886,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_model/" class="md-nav__link">
+      <a href="../product_model/" class="md-nav__link">
         
   
   
@@ -914,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_quantity/" class="md-nav__link">
+      <a href="../product_quantity/" class="md-nav__link">
         
   
   
@@ -942,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_status/" class="md-nav__link">
+      <a href="../product_status/" class="md-nav__link">
         
   
   
@@ -970,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_discounts/" class="md-nav__link">
+      <a href="../product_discounts/" class="md-nav__link">
         
   
   
@@ -995,10 +1001,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_specials/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Акции
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1014,6 +1045,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#чем-акция-отличается-от-скидки" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Чем акция отличается от скидки
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#как-настроить" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Как настроить
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#цена-посчитанная-от-товара" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цена, посчитанная от товара
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#режимы-работы" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Режимы работы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Режимы работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#заменить-акции" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Заменить акции
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#добавить-акции" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Добавить акции
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#удалить-все-акции" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Удалить все акции
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1026,7 +1158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_sku/" class="md-nav__link">
+      <a href="../product_sku/" class="md-nav__link">
         
   
   
@@ -1054,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_upc/" class="md-nav__link">
+      <a href="../product_upc/" class="md-nav__link">
         
   
   
@@ -1082,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_ean/" class="md-nav__link">
+      <a href="../product_ean/" class="md-nav__link">
         
   
   
@@ -1110,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_jan/" class="md-nav__link">
+      <a href="../product_jan/" class="md-nav__link">
         
   
   
@@ -1138,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_isbn/" class="md-nav__link">
+      <a href="../product_isbn/" class="md-nav__link">
         
   
   
@@ -1166,7 +1298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_mpn/" class="md-nav__link">
+      <a href="../product_mpn/" class="md-nav__link">
         
   
   
@@ -1194,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_location/" class="md-nav__link">
+      <a href="../product_location/" class="md-nav__link">
         
   
   
@@ -1222,7 +1354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_tag/" class="md-nav__link">
+      <a href="../product_tag/" class="md-nav__link">
         
   
   
@@ -1250,7 +1382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_sort_order/" class="md-nav__link">
+      <a href="../product_sort_order/" class="md-nav__link">
         
   
   
@@ -1278,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_minimum/" class="md-nav__link">
+      <a href="../product_minimum/" class="md-nav__link">
         
   
   
@@ -1306,7 +1438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_points/" class="md-nav__link">
+      <a href="../product_points/" class="md-nav__link">
         
   
   
@@ -1334,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_viewed/" class="md-nav__link">
+      <a href="../product_viewed/" class="md-nav__link">
         
   
   
@@ -1362,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_subtract/" class="md-nav__link">
+      <a href="../product_subtract/" class="md-nav__link">
         
   
   
@@ -1390,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_shipping/" class="md-nav__link">
+      <a href="../product_shipping/" class="md-nav__link">
         
   
   
@@ -1418,7 +1550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_weight/" class="md-nav__link">
+      <a href="../product_weight/" class="md-nav__link">
         
   
   
@@ -1446,7 +1578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_length/" class="md-nav__link">
+      <a href="../product_length/" class="md-nav__link">
         
   
   
@@ -1474,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_width/" class="md-nav__link">
+      <a href="../product_width/" class="md-nav__link">
         
   
   
@@ -1502,7 +1634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_height/" class="md-nav__link">
+      <a href="../product_height/" class="md-nav__link">
         
   
   
@@ -1530,7 +1662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_stock_status/" class="md-nav__link">
+      <a href="../product_stock_status/" class="md-nav__link">
         
   
   
@@ -1558,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_tax_class/" class="md-nav__link">
+      <a href="../product_tax_class/" class="md-nav__link">
         
   
   
@@ -1586,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_weight_class/" class="md-nav__link">
+      <a href="../product_weight_class/" class="md-nav__link">
         
   
   
@@ -1614,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/product_length_class/" class="md-nav__link">
+      <a href="../product_length_class/" class="md-nav__link">
         
   
   
@@ -1642,7 +1774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/modificators/" class="md-nav__link">
+      <a href="../modificators/" class="md-nav__link">
         
   
   
@@ -1670,7 +1802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/variables/" class="md-nav__link">
+      <a href="../variables/" class="md-nav__link">
         
   
   
@@ -1698,7 +1830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-bulk-edit/stale-values/" class="md-nav__link">
+      <a href="../stale-values/" class="md-nav__link">
         
   
   
@@ -1730,8 +1862,6 @@
       
   
   
-    
-  
   
   
     
@@ -1754,15 +1884,17 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked="">
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7">
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../seo-master/" class="md-nav__link ">
               
   
   
@@ -1780,13 +1912,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_7" id="__nav_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1806,7 +1938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manually/" class="md-nav__link">
+      <a href="../../seo-master/manually/" class="md-nav__link">
         
   
   
@@ -1834,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ai-powered/" class="md-nav__link">
+      <a href="../../seo-master/ai-powered/" class="md-nav__link">
         
   
   
@@ -1894,7 +2026,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../product-bulk-delete/" class="md-nav__link ">
+            <a href="../../product-bulk-delete/" class="md-nav__link ">
               
   
   
@@ -1965,7 +2097,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../simulation/" class="md-nav__link ">
+            <a href="../../simulation/" class="md-nav__link ">
               
   
   
@@ -2036,7 +2168,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../bulk-process/" class="md-nav__link ">
+            <a href="../../bulk-process/" class="md-nav__link ">
               
   
   
@@ -2092,8 +2224,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2102,10 +2232,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#основные-возможности" class="md-nav__link">
+  <a href="#чем-акция-отличается-от-скидки" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Основные возможности
+        Чем акция отличается от скидки
       
     </span>
   </a>
@@ -2113,13 +2243,74 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#начало-работы" class="md-nav__link">
+  <a href="#как-настроить" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Начало работы
+        Как настроить
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#цена-посчитанная-от-товара" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цена, посчитанная от товара
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#режимы-работы" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Режимы работы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Режимы работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#заменить-акции" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Заменить акции
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#добавить-акции" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Добавить акции
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#удалить-все-акции" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Удалить все акции
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2140,33 +2331,128 @@
 
 
 
-<h1 id="инструмент-seo-master">Инструмент SEO Master<a class="headerlink" href="#инструмент-seo-master" title="Permanent link">¶</a></h1>
-<p>SEO Master - это мощный инструмент для оптимизации SEO-параметров ваших товаров. С его помощью вы можете:</p>
+  <h1>Акции</h1>
+
+<p>Инструмент <strong>«Акции»</strong> массово задаёт товарам акционную цену — ту, что покупатель видит вместо
+обычной, пока акция действует.</p>
+<p>Вы можете:</p>
 <ul>
-<li>Массово редактировать SEO-параметры товаров</li>
-<li>Использовать AI для автоматической оптимизации</li>
-<li>Применять изменения в ручном режиме</li>
-<li>Предварительно просматривать все изменения перед их применением</li>
+<li><strong>Заменить акции</strong> — полностью заменить текущие акции указанными.</li>
+<li><strong>Добавить акции</strong> — добавить указанные акции к существующим.</li>
+<li><strong>Удалить все акции</strong> — очистить список акций у товаров.</li>
 </ul>
-<h2 id="основные-возможности">Основные возможности<a class="headerlink" href="#основные-возможности" title="Permanent link">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Внимание</p>
+<p>«Заменить акции» и «Удалить все акции» стирают всё, что было у товара, — восстановить это
+нельзя. Перед запуском посмотрите <a href="../../simulation/">предпросмотр изменений</a> и сделайте
+резервную копию.</p>
+</div>
+<hr>
+<h2 id="чем-акция-отличается-от-скидки">Чем акция отличается от скидки<a class="headerlink" href="#чем-акция-отличается-от-скидки" title="Permanent link">¶</a></h2>
+<p>Обе задают покупателю другую цену, но по разному поводу:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><a href="../product_discounts/">Скидка</a></th>
+<th>Акция</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Когда срабатывает</td>
+<td>от указанного количества в корзине</td>
+<td>всегда, пока идёт акция</td>
+</tr>
+<tr>
+<td>Что видно в каталоге</td>
+<td>обычная цена</td>
+<td>акционная цена вместо обычной, старая зачёркнута</td>
+</tr>
+<tr>
+<td>Типичный случай</td>
+<td>оптовая сетка «от 10 штук дешевле»</td>
+<td>распродажа на неделю</td>
+</tr>
+</tbody>
+</table>
+<p>Поэтому у акции нет поля «Количество»: ограничить её можно только группой покупателей и датами.</p>
+<hr>
+<h2 id="как-настроить">Как настроить<a class="headerlink" href="#как-настроить" title="Permanent link">¶</a></h2>
+<p>Акции задаются в отдельном окне — кнопка <strong>«Настроить акции»</strong> в строке свойства. Счётчик на
+кнопке показывает, сколько строк уже задано, так что открывать окно ради этого не нужно.</p>
+<p>Каждая строка — это ответ на три вопроса: <strong>кому</strong>, <strong>почём</strong> и <strong>когда</strong>.</p>
 <ul>
-<li>Массовое редактирование мета-тегов</li>
-<li>Оптимизация заголовков и описаний</li>
-<li>AI-ассистент для генерации контента</li>
-<li>Предпросмотр изменений</li>
-<li>История изменений</li>
-<li>Откат изменений при необходимости</li>
+<li><strong>Группа покупателей</strong> — для кого действует цена.</li>
+<li><strong>Цена</strong> — сколько будет стоить товар во время акции. Это именно цена, а не размер уценки:
+  «900» означает, что товар продаётся за 900, а не «дешевле на 900».</li>
+<li><strong>Приоритет</strong> — какая строка сработает, если товар попал сразу под несколько акций. Побеждает
+  строка с меньшим числом; список всегда отсортирован по приоритету, и порядок строк можно менять
+  перетаскиванием.</li>
 </ul>
-<h2 id="начало-работы">Начало работы<a class="headerlink" href="#начало-работы" title="Permanent link">¶</a></h2>
-<p>Для начала работы с SEO Master выберите один из двух режимов:
-- <a href="manually/">Ручной режим</a> - для полного контроля над изменениями
-- <a href="ai-powered/">AI Powered</a> - для автоматической оптимизации с помощью искусственного интеллекта</p>
+<p><strong>Период действия</strong> один на весь набор и задаётся сверху окна. Пока он не выбран, акция действует
+без ограничения по датам.</p>
+<hr>
+<h2 id="цена-посчитанная-от-товара">Цена, посчитанная от товара<a class="headerlink" href="#цена-посчитанная-от-товара" title="Permanent link">¶</a></h2>
+<p>Одна и та же акционная цена на всю выборку годится редко: у товаров разная базовая цена. Поэтому
+цену можно не вписывать числом, а посчитать выражением — тем же, что и в правиле
+<a href="../product_price/">цены</a>.</p>
+<p>Например, <code>{product_price} * 0.8</code> даст каждому товару его собственную цену со скидкой 20 %:</p>
+<table>
+<thead>
+<tr>
+<th>Цена товара</th>
+<th>Выражение</th>
+<th>Акционная цена</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 000</td>
+<td><code>{product_price} * 0.8</code></td>
+<td>800</td>
+</tr>
+<tr>
+<td>2 490</td>
+<td><code>{product_price} * 0.8</code></td>
+<td>1 992</td>
+</tr>
+</tbody>
+</table>
+<p>Рядом с полем цены стоит кнопка округления: с шагом 10 и режимом «вниз» вторая строка примера даст
+1 990 вместо 1 992.</p>
+<p>Полный список доступных в выражении величин — на странице <a href="../variables/">Переменные</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Переменная отдаёт значение до изменения</p>
+<p>Если в том же наборе правил вы меняете и цену товара, и акцию, выражение <code>{product_price}</code>
+возьмёт <strong>старую</strong> цену: правила считаются от исходного товара, а не друг от друга. Модуль
+предупредит об этом значком у правила — подробнее в статье
+<a href="../stale-values/">Устаревшие значения переменных</a>.</p>
+</div>
+<hr>
+<h2 id="режимы-работы">Режимы работы<a class="headerlink" href="#режимы-работы" title="Permanent link">¶</a></h2>
+<h3 id="заменить-акции">Заменить акции<a class="headerlink" href="#заменить-акции" title="Permanent link">¶</a></h3>
+<p>Все акции товара удаляются, вместо них записываются заданные. Это обычный режим для распродажи:
+что бы у товара ни лежало раньше, после применения там ровно то, что вы задали.</p>
+<h3 id="добавить-акции">Добавить акции<a class="headerlink" href="#добавить-акции" title="Permanent link">¶</a></h3>
+<p>Заданные строки дописываются к тем, что уже есть. Повторы не отслеживаются: если у товара уже была
+акция для той же группы покупателей, она останется, а новая ляжет отдельной строкой. Какая из них
+сработает, решит приоритет.</p>
+<h3 id="удалить-все-акции">Удалить все акции<a class="headerlink" href="#удалить-все-акции" title="Permanent link">¶</a></h3>
+<p>Снимает у выбранных товаров все акции. Пригодится, чтобы закрыть распродажу разом, не дожидаясь
+дат окончания.</p>
+<hr>
+<p>Отобрать товары для акции удобно <a href="../../product-search/filters/">фильтрами</a> — например, все товары
+одного производителя или дороже определённой суммы.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -2218,10 +2504,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["glightbox", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.indexes", "toc.follow", "navigation.top", "glightbox", "navigation.instant"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["glightbox", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.indexes", "toc.follow", "navigation.top", "glightbox", "navigation.instant"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   
