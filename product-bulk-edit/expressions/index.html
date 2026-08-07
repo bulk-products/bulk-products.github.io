@@ -3,19 +3,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Инструкция по работе с инструментом изменения артикула производителя (MPN) у товаров. Задание значения, удаление текста, очистка поля, переменные и модификаторы.">
+        <meta name="description" content="Как задать цену, вес или количество формулой: переменные товара, арифметика, функции округления. Примеры расчётов и типичные ошибки.">
       
       
         <meta name="author" content="Nikita Kiselev">
       
       
-        <link rel="canonical" href="https://bulk-products.github.io/product-bulk-edit/product_mpn/">
+        <link rel="canonical" href="https://bulk-products.github.io/product-bulk-edit/expressions/">
       
       
-        <link rel="prev" href="../product_isbn/">
+        <link rel="prev" href="../variables/">
       
       
-        <link rel="next" href="../product_location/">
+        <link rel="next" href="../stale-values/">
       
       
         
@@ -26,7 +26,7 @@
     
     
       
-        <title>Массовое изменение артикула производителя MPN в Bulk Products - Bulk Products</title>
+        <title>Формулы в числовых полях Bulk Products - Bulk Products</title>
       
     
     
@@ -67,17 +67,17 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="Массовое изменение артикула производителя MPN в Bulk Products - Bulk Products">
-<meta property="og:description" content="Инструкция по работе с инструментом изменения артикула производителя (MPN) у товаров. Задание значения, удаление текста, очистка поля, переменные и модификаторы.">
-<meta property="og:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/product_mpn.png">
+<meta property="og:title" content="Формулы в числовых полях Bulk Products - Bulk Products">
+<meta property="og:description" content="Как задать цену, вес или количество формулой: переменные товара, арифметика, функции округления. Примеры расчётов и типичные ошибки.">
+<meta property="og:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/expressions.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://bulk-products.github.io/product-bulk-edit/product_mpn/">
+<meta property="og:url" content="https://bulk-products.github.io/product-bulk-edit/expressions/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Массовое изменение артикула производителя MPN в Bulk Products - Bulk Products">
-<meta property="twitter:description" content="Инструкция по работе с инструментом изменения артикула производителя (MPN) у товаров. Задание значения, удаление текста, очистка поля, переменные и модификаторы.">
-<meta property="twitter:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/product_mpn.png">
+<meta property="twitter:title" content="Формулы в числовых полях Bulk Products - Bulk Products">
+<meta property="twitter:description" content="Как задать цену, вес или количество формулой: переменные товара, арифметика, функции округления. Примеры расчётов и типичные ошибки.">
+<meta property="twitter:image" content="https://bulk-products.github.io/assets/images/social/product-bulk-edit/expressions.png">
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#доступные-действия" class="md-skip">
+        <a href="#когда-формула-нужна-а-когда-нет" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Массовое изменение артикула производителя MPN в Bulk Products
+              Формулы в числовых полях Bulk Products
             
           </span>
         </div>
@@ -1171,35 +1171,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Артикул производителя (MPN)
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../product_mpn/" class="md-nav__link">
         
   
   
@@ -1215,57 +1190,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#доступные-действия" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Доступные действия
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#особенности" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Особенности
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#поддержка-переменных" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Поддержка переменных
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1779,10 +1703,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../expressions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Формулы в числовых полях
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1798,6 +1747,228 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#когда-формула-нужна-а-когда-нет" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Когда формула нужна, а когда нет
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#что-можно-писать" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что можно писать
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#функции" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Функции
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Функции">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#round" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        round
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ceil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ceil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        floor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        min
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        max
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        abs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sqrt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sqrt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intdiv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        intdiv
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fmod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fmod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        avg
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#какие-свойства-доступны-в-формулах" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Какие свойства доступны в формулах
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#где-доступны-формулы" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Где доступны формулы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#где-можно-ошибиться" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Где можно ошибиться
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2212,10 +2383,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#доступные-действия" class="md-nav__link">
+  <a href="#когда-формула-нужна-а-когда-нет" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Доступные действия
+        Когда формула нужна, а когда нет
       
     </span>
   </a>
@@ -2223,10 +2394,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#особенности" class="md-nav__link">
+  <a href="#что-можно-писать" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Особенности
+        Что можно писать
       
     </span>
   </a>
@@ -2234,10 +2405,181 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#поддержка-переменных" class="md-nav__link">
+  <a href="#функции" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Поддержка переменных
+        Функции
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Функции">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#round" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        round
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ceil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ceil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        floor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        min
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        max
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        abs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sqrt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sqrt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intdiv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        intdiv
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fmod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fmod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        avg
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#какие-свойства-доступны-в-формулах" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Какие свойства доступны в формулах
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#где-доступны-формулы" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Где доступны формулы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#где-можно-ошибиться" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Где можно ошибиться
       
     </span>
   </a>
@@ -2261,44 +2603,200 @@
 
 
 
-  <h1>Артикул производителя (MPN)</h1>
+  <h1>Формулы в числовых полях</h1>
 
-<p>Инструмент <strong>«Артикул производителя (MPN)»</strong> позволяет массово изменить номер детали производителя — поле <code>MPN</code> на вкладке «Данные» карточки товара — у выбранных товаров.</p>
-<hr>
-<h2 id="доступные-действия">Доступные действия<a class="headerlink" href="#доступные-действия" title="Permanent link">¶</a></h2>
-<ul>
-<li><strong>Задать значение</strong> — заменяет текущий артикул на указанный. Поддерживает переменные и модификаторы. Пустое значение полностью очищает поле — это штатный способ снять артикул сразу у всей выборки.</li>
-<li><strong>Удалить текст</strong> — убирает из текущего артикула только совпавший фрагмент, остальное остаётся как было.</li>
-</ul>
-<hr>
-<h2 id="особенности">Особенности<a class="headerlink" href="#особенности" title="Permanent link">¶</a></h2>
-<ul>
-<li>Поле не зависит от языка — значение одно для всех языковых версий товара.</li>
-<li>Артикул ограничен 64 символами. Более длинное значение не применяется: товар остаётся без изменений, а строка отмечается ошибкой в результатах предпросмотра.</li>
-<li>Изменение обновляет дату последнего изменения товара — так же, как ручная правка в админке.</li>
-</ul>
-<hr>
-<h2 id="поддержка-переменных">Поддержка переменных<a class="headerlink" href="#поддержка-переменных" title="Permanent link">¶</a></h2>
-<p><strong>Пример:</strong> в категории аксессуаров у товаров ни разу не заполняли MPN, но код товара уже отражает номер детали производителя — его можно скопировать в MPN одним действием:</p>
-<div class="highlight"><pre><span></span><code>{product_model}
+<p>Числовое поле принимает не только число. В него можно записать формулу — и тогда у каждого товара
+получится своё значение, посчитанное из его собственных свойств.</p>
+<div class="highlight"><pre><span></span><code>{product_weight} * 350
 </code></pre></div>
+<p>Такая цена у товара весом 2 кг станет 700, а у товара весом 0,4 кг — 140. Одно правило, разные
+результаты: считает модуль, а не вы в калькуляторе.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../expressions-form.png" data-desc-position="bottom"><img alt="Формулы в правилах изменения свойств" src="../expressions-form.png" width="100%"></a></p>
+<figcaption>
+<p>Одно и то же поле принимает и число, и формулу с переменными. Ошибка в записи видна сразу — вместе
+со ссылкой на эту страницу</p>
+</figcaption>
+</figure>
+<hr>
+<h2 id="когда-формула-нужна-а-когда-нет">Когда формула нужна, а когда нет<a class="headerlink" href="#когда-формула-нужна-а-когда-нет" title="Permanent link">¶</a></h2>
+<p>Формула нужна, когда значение зависит <strong>от другого свойства товара</strong>: цена от веса, цена от объёма,
+скидка от остатка на складе.</p>
+<p>Если же вы просто поднимаете цену на 10 % или ставите всем количество 100, формула не нужна —
+выберите действие «Увеличить на» или «Установить равным» и введите число. Это короче, читается
+с одного взгляда и ошибиться там негде: в формуле <code>{product_price} * 1.1</code> и <code>{product_price} * 0.1</code>
+различаются одной цифрой, а означают противоположное.</p>
+<hr>
+<h2 id="что-можно-писать">Что можно писать<a class="headerlink" href="#что-можно-писать" title="Permanent link">¶</a></h2>
+<p><strong>Числа</strong> — целые и дробные: <code>100</code>, <code>99.9</code>. Дробную часть можно набирать через запятую, поле само
+заменит её точкой.</p>
+<p><strong>Действия</strong> — <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> и <code>^</code> (возведение в степень). Скобки работают как в математике:
+<code>({product_price} + 100) * 2</code>.</p>
+<p><strong>Переменные</strong> — свойства товара в фигурных скобках. Вставлять вручную не нужно: значок <code>(x)</code>
+справа в поле открывает список, где переменные ищутся и по названию, и по имени.</p>
+<p><strong>Функции</strong> — округление, ограничения, условие. Их список ниже.</p>
+<hr>
+<h2 id="функции">Функции<a class="headerlink" href="#функции" title="Permanent link">¶</a></h2>
+<p>Во всех примерах цена товара — <code>1234,56</code>, количество — <code>7</code>, вес — <code>2,5</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Округление до кратности — отдельная настройка</p>
+<p>Чтобы подтянуть результат к 10 рублям или к «красивой» цене, функции не нужны: рядом с полем
+есть кнопка округления, и она умеет и кратность, и направление. Подробности — на странице
+<a href="../product_price/#округление-результата">«Цена»</a>.</p>
+</div>
+<h3 id="round">round<a class="headerlink" href="#round" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Округляет до целого по обычному правилу: дробная часть от 0,5 — вверх, меньше —
+вниз. Знаков после запятой функция не принимает, для этого есть кнопка округления рядом с полем.<br>
+<strong>Пример:</strong> <code>round({product_price})</code><br>
+<strong>Результат:</strong> <code>1235</code></p>
+<hr>
+<h3 id="ceil">ceil<a class="headerlink" href="#ceil" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Округляет вверх до целого, каким бы маленьким ни был остаток.<br>
+<strong>Пример:</strong> <code>ceil({product_price})</code><br>
+<strong>Результат:</strong> <code>1235</code></p>
+<hr>
+<h3 id="floor">floor<a class="headerlink" href="#floor" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Округляет вниз до целого, отбрасывая дробную часть.<br>
+<strong>Пример:</strong> <code>floor({product_price})</code><br>
+<strong>Результат:</strong> <code>1234</code></p>
+<hr>
+<h3 id="min">min<a class="headerlink" href="#min" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Меньшее из двух чисел. Удобно ставить потолок: «пересчитанная цена, но не дороже
+999».<br>
+<strong>Пример:</strong> <code>min({product_price}, 999)</code><br>
+<strong>Результат:</strong> <code>999</code></p>
+<hr>
+<h3 id="max">max<a class="headerlink" href="#max" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Большее из двух чисел — так задают нижнюю границу, чтобы скидка не увела цену ниже
+себестоимости.<br>
+<strong>Пример:</strong> <code>max({product_price} * 0.5, 700)</code><br>
+<strong>Результат:</strong> <code>700</code></p>
+<hr>
+<h3 id="abs">abs<a class="headerlink" href="#abs" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Число без знака: <code>-5</code> превращается в <code>5</code>. Пригодится, когда разница двух свойств
+может выйти отрицательной, а нужен её размер.<br>
+<strong>Пример:</strong> <code>abs({product_price} - 2000)</code><br>
+<strong>Результат:</strong> <code>765,44</code></p>
+<hr>
+<h3 id="sqrt">sqrt<a class="headerlink" href="#sqrt" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Квадратный корень.<br>
+<strong>Пример:</strong> <code>sqrt({product_price})</code><br>
+<strong>Результат:</strong> <code>35,1364</code></p>
+<hr>
+<h3 id="pow">pow<a class="headerlink" href="#pow" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Возведение в степень: первое число в степени второго. То же самое делает знак <code>^</code>.<br>
+<strong>Пример:</strong> <code>pow({product_weight}, 3)</code><br>
+<strong>Результат:</strong> <code>15,625</code></p>
+<hr>
+<h3 id="intdiv">intdiv<a class="headerlink" href="#intdiv" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Деление с отбрасыванием остатка: сколько целых раз одно число помещается в другом.<br>
+<strong>Пример:</strong> <code>intdiv({product_price}, 100)</code><br>
+<strong>Результат:</strong> <code>12</code></p>
+<hr>
+<h3 id="fmod">fmod<a class="headerlink" href="#fmod" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Остаток от деления. <code>fmod({product_price}, 100)</code> показывает, сколько у цены сверх
+последней сотни, — по нему считают «красивые» цены вручную, если стандартного округления не хватает.<br>
+<strong>Пример:</strong> <code>fmod({product_price}, 100)</code><br>
+<strong>Результат:</strong> <code>34,56</code></p>
+<hr>
+<h3 id="avg">avg<a class="headerlink" href="#avg" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Среднее из двух чисел.<br>
+<strong>Пример:</strong> <code>avg({product_price}, 1000)</code><br>
+<strong>Результат:</strong> <code>1117,28</code></p>
+<hr>
+<h3 id="if">if<a class="headerlink" href="#if" title="Permanent link">¶</a></h3>
+<p><strong>Описание:</strong> Выбор одного из двух значений по условию: <code>if(условие, если да, если нет)</code>. В условии
+работают сравнения <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>==</code>, <code>!=</code>, а несколько условий соединяются через <code>&amp;&amp;</code> (и)
+и <code>||</code> (или).<br>
+<strong>Пример:</strong> <code>if({product_quantity} &gt; 5, 990, 1290)</code><br>
+<strong>Результат:</strong> <code>990</code> — остаток больше пяти, поэтому цена ниже</p>
+<hr>
+<p>Доступны и остальные математические функции — логарифмы, тригонометрия, переводы систем счисления.
+В магазине они нужны редко, поэтому здесь не перечислены.</p>
+<hr>
+<h2 id="какие-свойства-доступны-в-формулах">Какие свойства доступны в формулах<a class="headerlink" href="#какие-свойства-доступны-в-формулах" title="Permanent link">¶</a></h2>
+<p>В формулах участвуют только числовые свойства: сложить текст с числом нельзя.</p>
 <table>
 <thead>
 <tr>
-<th>product_model</th>
-<th>Стало (product_mpn)</th>
+<th>Переменная</th>
+<th>Свойство товара</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>A1502</code></td>
-<td><code>A1502</code></td>
+<td><code>{product_price}</code></td>
+<td>Цена</td>
+</tr>
+<tr>
+<td><code>{product_quantity}</code></td>
+<td>Количество на складе</td>
+</tr>
+<tr>
+<td><code>{product_weight}</code></td>
+<td>Вес</td>
+</tr>
+<tr>
+<td><code>{product_length}</code></td>
+<td>Длина</td>
+</tr>
+<tr>
+<td><code>{product_width}</code></td>
+<td>Ширина</td>
+</tr>
+<tr>
+<td><code>{product_height}</code></td>
+<td>Высота</td>
+</tr>
+<tr>
+<td><code>{product_viewed}</code></td>
+<td>Счётчик просмотров</td>
+</tr>
+<tr>
+<td><code>{product_id}</code></td>
+<td>Номер товара в базе</td>
+</tr>
+<tr>
+<td><code>{year}</code></td>
+<td>Текущий год</td>
+</tr>
+<tr>
+<td><code>{month}</code></td>
+<td>Номер текущего месяца</td>
 </tr>
 </tbody>
 </table>
-<p>Полный список переменных — на странице <a href="../variables/">Переменные</a>, модификаторов — на странице <a href="../modificators/">Модификаторы</a>.</p>
+<p>Остальные переменные — текстовые, они работают в названии, описании и мета-тегах: их список на
+странице <a href="../variables/">«Переменные»</a>.</p>
 <hr>
-<p>Инструмент избавляет от ручной правки артикулов производителя в каждой карточке товара по отдельности.</p>
+<h2 id="где-доступны-формулы">Где доступны формулы<a class="headerlink" href="#где-доступны-формулы" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>числовые свойства товара:</strong> цена, количество, вес, габариты, порядок сортировки, бонусные баллы
+  и прочие поля с числом;</li>
+<li><strong>цена в <a href="../product_discounts/">скидках</a> и <a href="../product_specials/">акциях</a></strong> — в окне настройки, в
+  колонке «Цена». Формула здесь особенно уместна: <code>{product_price} * 0.9</code> задаёт скидку 10 % от цены
+  каждого товара, а не одну цену на всю выборку.</li>
+</ul>
+<hr>
+<h2 id="где-можно-ошибиться">Где можно ошибиться<a class="headerlink" href="#где-можно-ошибиться" title="Permanent link">¶</a></h2>
+<p><strong>Переменная отдаёт значение до изменения.</strong> Если в одном наборе правил вы меняете и цену, и что-то
+посчитанное от цены, второе правило возьмёт <strong>старую</strong> цену, а не новую. Модуль предупреждает об этом
+значком у правила — подробнее на странице
+<a href="../stale-values/">«Устаревшие значения переменных»</a>.</p>
+<p><strong>Пустое поле — это ноль.</strong> Формулу можно не дописать и уйти на следующий шаг: значение посчитается
+как 0. Для цены это означает товар за бесплатно, поэтому смотрите предпросмотр.</p>
+<p><strong>Ошибку в записи модуль показывает сразу.</strong> Незакрытая скобка, лишний знак, опечатка в имени
+переменной — поле подсвечивается красным, а под ним появляется объяснение. Пока ошибка не исправлена,
+на следующий шаг мастер не пустит.</p>
+<p><strong>Деление на ноль ловится на товаре.</strong> Формула <code>{product_price} / {product_quantity}</code> записана верно,
+но у товара с нулевым остатком посчитаться не может. Такие случаи видны в предпросмотре и в обзоре
+изменений — по ним же понятно, каких товаров это касается.</p>
+<div class="admonition warning">
+<p class="admonition-title">Проверяйте предпросмотром</p>
+<p>Формула применяется ко всей выборке сразу, и результат у каждого товара свой. Предпросмотр
+показывает «было → стало» на конкретных товарах — это самый быстрый способ убедиться, что
+формула считает то, что вы задумали.</p>
+</div>
 
 
 
