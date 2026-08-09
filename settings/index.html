@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Подробное руководство по настройке модуля Bulk Products. Основные параметры, интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter) и настройки для разработчиков.">
+        <meta name="description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), планировщик, очередь и настройки для разработчиков.">
       
       
         <meta name="author" content="Nikita Kiselev">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Настройки Bulk Products - Основные параметры и AI интеграция - Bulk Products</title>
+        <title>Настройки Bulk Products - AI интеграция, планировщик и очередь - Bulk Products</title>
       
     
     
@@ -67,16 +67,16 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="Настройки Bulk Products - Основные параметры и AI интеграция - Bulk Products">
-<meta property="og:description" content="Подробное руководство по настройке модуля Bulk Products. Основные параметры, интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter) и настройки для разработчиков.">
+<meta property="og:title" content="Настройки Bulk Products - AI интеграция, планировщик и очередь - Bulk Products">
+<meta property="og:description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), планировщик, очередь и настройки для разработчиков.">
 <meta property="og:image" content="https://bulk-products.github.io/assets/images/social/settings.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://bulk-products.github.io/settings/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Настройки Bulk Products - Основные параметры и AI интеграция - Bulk Products">
-<meta property="twitter:description" content="Подробное руководство по настройке модуля Bulk Products. Основные параметры, интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter) и настройки для разработчиков.">
+<meta property="twitter:title" content="Настройки Bulk Products - AI интеграция, планировщик и очередь - Bulk Products">
+<meta property="twitter:description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), планировщик, очередь и настройки для разработчиков.">
 <meta property="twitter:image" content="https://bulk-products.github.io/assets/images/social/settings.png">
 <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Настройки Bulk Products - Основные параметры и AI интеграция
+              Настройки Bulk Products - AI интеграция, планировщик и очередь
             
           </span>
         </div>
@@ -373,34 +373,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#основные" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Основные
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Основные">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#размер-пакета-обработки-товаров" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Размер пакета обработки товаров
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#интеграция-с-ai" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -450,6 +422,56 @@
     <span class="md-ellipsis">
       
         OpenRouter AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#планировщик" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Планировщик
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#очередь" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Очередь
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Очередь">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#кто-доводит-очередь-до-конца" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Кто доводит очередь до конца
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#размер-пакета-обработки-товаров" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Размер пакета обработки товаров
       
     </span>
   </a>
@@ -2283,34 +2305,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#основные" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Основные
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Основные">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#размер-пакета-обработки-товаров" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Размер пакета обработки товаров
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#интеграция-с-ai" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2360,6 +2354,56 @@
     <span class="md-ellipsis">
       
         OpenRouter AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#планировщик" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Планировщик
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#очередь" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Очередь
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Очередь">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#кто-доводит-очередь-до-конца" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Кто доводит очередь до конца
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#размер-пакета-обработки-товаров" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Размер пакета обработки товаров
       
     </span>
   </a>
@@ -2428,25 +2472,13 @@
 
 
 <h1 id="настройки-модуля">Настройки модуля<a class="headerlink" href="#настройки-модуля" title="Permanent link">¶</a></h1>
-<p>Модуль <strong>Bulk Products</strong> предлагает гибкую систему настроек, разделённую на три вкладки:</p>
+<p>Модуль <strong>Bulk Products</strong> предлагает гибкую систему настроек, разделённую на вкладки:</p>
 <ul>
-<li><a href="#основные">Основные</a></li>
 <li><a href="#интеграция-с-ai">Интеграция с AI</a></li>
+<li><a href="#планировщик">Планировщик</a></li>
+<li><a href="#очередь">Очередь</a></li>
 <li><a href="#для-разработчика">Для разработчика</a></li>
 </ul>
-<hr>
-<h2 id="основные">Основные<a class="headerlink" href="#основные" title="Permanent link">¶</a></h2>
-<h3 id="размер-пакета-обработки-товаров">Размер пакета обработки товаров<a class="headerlink" href="#размер-пакета-обработки-товаров" title="Permanent link">¶</a></h3>
-<p>Эта опция определяет, сколько товаров будет обрабатываться за один шаг при массовом редактировании.</p>
-<div class="admonition info">
-<p class="admonition-title">Значение по умолчанию</p>
-<p>50 товаров за шаг.</p>
-</div>
-<ul>
-<li>Слишком большое значение может замедлить выполнение операций или перегрузить сервер.</li>
-<li>Слишком маленькое значение увеличивает общее время обработки.</li>
-</ul>
-<p>Рекомендуется подбирать значение в зависимости от производительности сервера и объёма редактируемых данных.</p>
 <hr>
 <h2 id="интеграция-с-ai">Интеграция с AI<a class="headerlink" href="#интеграция-с-ai" title="Permanent link">¶</a></h2>
 <p>Модуль поддерживает интеграцию с несколькими AI-провайдерами для автоматической генерации описаний, SEO-текста и других полей.</p>
@@ -2504,6 +2536,39 @@
 <p class="admonition-title">Недостатки</p>
 <p>Возможна нестабильность отдельных моделей, особенно при бесплатном использовании.</p>
 </div>
+<hr>
+<h2 id="планировщик">Планировщик<a class="headerlink" href="#планировщик" title="Permanent link">¶</a></h2>
+<p>Планировщик будит модуль раз в минуту, чтобы тот продолжал работу без открытого браузера. Пока он выключен, всё делается только на открытой вкладке.</p>
+<p>Включать его стоит, если вы запускаете длинные операции — редактирование тысяч товаров или SEO-мастер по всему каталогу.</p>
+<p>Есть два способа запуска, и оба настраиваются на стороне хостинга:</p>
+<ul>
+<li><strong>Системный CRON</strong> — самый надёжный. Модуль показывает готовую строку, её остаётся добавить в планировщик задач на хостинге.</li>
+<li><strong>Планировщик хостинга по адресу</strong> — если консоли нет: тот же запуск, но по ссылке, которую дёргает планировщик вашего хостинга.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Строка живёт дольше настройки</p>
+<p>Если вы выключите планировщик в модуле, а задание на хостинге останется, оно просто перестанет что-либо делать — модуль сверяется с настройкой на каждом запуске. Задание всё же лучше убрать, чтобы не занимать сервер впустую.</p>
+</div>
+<p>На вкладке видно, когда планировщик приходил в последний раз. Если после настройки отметка не появилась в течение пары минут — задание на хостинге не запускается.</p>
+<hr>
+<h2 id="очередь">Очередь<a class="headerlink" href="#очередь" title="Permanent link">¶</a></h2>
+<p>Долгие операции модуль выполняет очередью: она разбивает работу на порции и перемалывает их одну за другой.</p>
+<h3 id="кто-доводит-очередь-до-конца">Кто доводит очередь до конца<a class="headerlink" href="#кто-доводит-очередь-до-конца" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Браузер</strong> — работа идёт, пока открыта вкладка модуля. Закроете — остановится там, где успела.</li>
+<li><strong>Планировщик</strong> — работа доводится до конца без вкладки: можно закрыть браузер и оставить длинный прогон на ночь. Вариант доступен, когда планировщик включён на соседней вкладке.</li>
+</ul>
+<h3 id="размер-пакета-обработки-товаров">Размер пакета обработки товаров<a class="headerlink" href="#размер-пакета-обработки-товаров" title="Permanent link">¶</a></h3>
+<p>Сколько товаров модуль обрабатывает за один шаг.</p>
+<div class="admonition info">
+<p class="admonition-title">Значение по умолчанию</p>
+<p>50 товаров за шаг.</p>
+</div>
+<ul>
+<li>Слишком большой пакет нагружает сервер и может упереться в лимит времени.</li>
+<li>Слишком маленький растягивает работу.</li>
+</ul>
+<p>Рекомендуется подбирать значение в зависимости от производительности сервера и объёма редактируемых данных.</p>
 <hr>
 <h2 id="для-разработчика">Для разработчика<a class="headerlink" href="#для-разработчика" title="Permanent link">¶</a></h2>
 <h3 id="режим-разработчика">Режим разработчика<a class="headerlink" href="#режим-разработчика" title="Permanent link">¶</a></h3>
