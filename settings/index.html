@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), планировщик, очередь и настройки для разработчиков.">
+        <meta name="description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), очередь, запуск по CRON и настройки для разработчиков.">
       
       
         <meta name="author" content="Nikita Kiselev">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Настройки Bulk Products - AI интеграция, планировщик и очередь - Bulk Products</title>
+        <title>Настройки Bulk Products - AI интеграция, очередь и CRON - Bulk Products</title>
       
     
     
@@ -67,16 +67,16 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="Настройки Bulk Products - AI интеграция, планировщик и очередь - Bulk Products">
-<meta property="og:description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), планировщик, очередь и настройки для разработчиков.">
+<meta property="og:title" content="Настройки Bulk Products - AI интеграция, очередь и CRON - Bulk Products">
+<meta property="og:description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), очередь, запуск по CRON и настройки для разработчиков.">
 <meta property="og:image" content="https://bulk-products.github.io/assets/images/social/settings.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://bulk-products.github.io/settings/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Настройки Bulk Products - AI интеграция, планировщик и очередь - Bulk Products">
-<meta property="twitter:description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), планировщик, очередь и настройки для разработчиков.">
+<meta property="twitter:title" content="Настройки Bulk Products - AI интеграция, очередь и CRON - Bulk Products">
+<meta property="twitter:description" content="Подробное руководство по настройке модуля Bulk Products. Интеграция с AI-провайдерами (Yandex GPT, GigaChat, OpenRouter), очередь, запуск по CRON и настройки для разработчиков.">
 <meta property="twitter:image" content="https://bulk-products.github.io/assets/images/social/settings.png">
 <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Настройки Bulk Products - AI интеграция, планировщик и очередь
+              Настройки Bulk Products - AI интеграция, очередь и CRON
             
           </span>
         </div>
@@ -434,17 +434,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#планировщик" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Планировщик
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#очередь" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -457,10 +446,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#кто-доводит-очередь-до-конца" class="md-nav__link">
+  <a href="#как-обрабатывать-очередь" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Кто доводит очередь до конца
+        Как обрабатывать очередь
       
     </span>
   </a>
@@ -2394,17 +2383,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#планировщик" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Планировщик
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#очередь" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2417,10 +2395,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#кто-доводит-очередь-до-конца" class="md-nav__link">
+  <a href="#как-обрабатывать-очередь" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Кто доводит очередь до конца
+        Как обрабатывать очередь
       
     </span>
   </a>
@@ -2531,7 +2509,6 @@
 <p>Модуль <strong>Bulk Products</strong> предлагает гибкую систему настроек, разделённую на вкладки:</p>
 <ul>
 <li><a href="#интеграция-с-ai">Интеграция с AI</a></li>
-<li><a href="#планировщик">Планировщик</a></li>
 <li><a href="#очередь">Очередь</a></li>
 <li><a href="#для-разработчика">Для разработчика</a></li>
 </ul>
@@ -2593,27 +2570,24 @@
 <p>Возможна нестабильность отдельных моделей, особенно при бесплатном использовании.</p>
 </div>
 <hr>
-<h2 id="планировщик">Планировщик<a class="headerlink" href="#планировщик" title="Permanent link">¶</a></h2>
-<p>Планировщик будит модуль раз в минуту, чтобы тот продолжал работу без открытого браузера. Пока он выключен, всё делается только на открытой вкладке.</p>
-<p>Включать его стоит, если вы запускаете длинные операции — редактирование тысяч товаров или SEO-мастер по всему каталогу.</p>
-<p>Есть два способа запуска, и оба настраиваются на стороне хостинга:</p>
-<ul>
-<li><strong>Системный CRON</strong> — самый надёжный. Модуль показывает готовую строку, её остаётся добавить в планировщик задач на хостинге.</li>
-<li><strong>Планировщик хостинга по адресу</strong> — если консоли нет: тот же запуск, но по ссылке, которую дёргает планировщик вашего хостинга.</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Строка живёт дольше настройки</p>
-<p>Если вы выключите планировщик в модуле, а задание на хостинге останется, оно просто перестанет что-либо делать — модуль сверяется с настройкой на каждом запуске. Задание всё же лучше убрать, чтобы не занимать сервер впустую.</p>
-</div>
-<p>На вкладке видно, когда планировщик приходил в последний раз. Если после настройки отметка не появилась в течение пары минут — задание на хостинге не запускается.</p>
-<hr>
 <h2 id="очередь">Очередь<a class="headerlink" href="#очередь" title="Permanent link">¶</a></h2>
-<p>Долгие операции модуль выполняет очередью: она разбивает работу на порции и перемалывает их одну за другой.</p>
-<h3 id="кто-доводит-очередь-до-конца">Кто доводит очередь до конца<a class="headerlink" href="#кто-доводит-очередь-до-конца" title="Permanent link">¶</a></h3>
+<p>Всю обработку товаров, а также симуляцию модуль выполняет через очередь: она разбивает работу на порции и перемалывает их одну за другой.</p>
+<h3 id="как-обрабатывать-очередь">Как обрабатывать очередь<a class="headerlink" href="#как-обрабатывать-очередь" title="Permanent link">¶</a></h3>
 <ul>
-<li><strong>Браузер</strong> — работа идёт, пока открыта вкладка модуля. Закроете — остановится там, где успела.</li>
-<li><strong>Планировщик</strong> — работа доводится до конца без вкладки: можно закрыть браузер и оставить длинный прогон на ночь. Вариант доступен, когда планировщик включён на соседней вкладке.</li>
+<li><strong>Браузер</strong> — очередь двигает сам браузер. Настраивать ничего не нужно, но вкладку модуля придётся держать открытой, пока работа не досчитается до конца: закроете раньше — остановится там, где успела. Этого хватает, если операции недолгие.</li>
+<li><strong>Системный CRON</strong> — очередь двигает системный CRON: задачи выполняются в фоне, держать браузер открытым не нужно, и длинный прогон можно оставить на ночь. Модуль показывает готовую строку для <code>crontab -e</code> — её остаётся скопировать на сервер. Рекомендуемый способ, но нужен доступ к консоли.</li>
+<li><strong>Web-CRON</strong> — то же самое для хостинга без консоли: модуль даёт адрес с токеном, который раз в минуту дёргает планировщик задач в панели управления. Не работает, пока магазин закрыт на обслуживание.</li>
 </ul>
+<p>Запускать чаще раза в минуту незачем, а реже — значит во столько же раз растянуть обработку.</p>
+<div class="admonition warning">
+<p class="admonition-title">Задание живёт дольше настройки</p>
+<p>Если вы переключите драйвер на «Браузер», а задание на хостинге останется, оно просто перестанет что-либо делать — модуль сверяется с настройкой на каждом запуске. Задание всё же лучше убрать, чтобы не занимать сервер впустую.</p>
+</div>
+<p>Под выбранным драйвером видно, когда CRON приходил в последний раз. Если после настройки отметка не появилась в течение пары минут — задание на хостинге не запускается.</p>
+<div class="admonition info">
+<p class="admonition-title">Токен web-cron</p>
+<p>Адрес запуска содержит секретный токен: он заменяет авторизацию, потому что запрос приходит без входа в админку. Токен можно сгенерировать заново — старый перестанет работать сразу после сохранения настроек, и адрес в задании на хостинге придётся обновить.</p>
+</div>
 <h3 id="размер-пакета-обработки-товаров">Размер пакета обработки товаров<a class="headerlink" href="#размер-пакета-обработки-товаров" title="Permanent link">¶</a></h3>
 <p>Сколько товаров модуль обрабатывает за один шаг.</p>
 <div class="admonition info">
